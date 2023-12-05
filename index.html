@@ -44,5 +44,13 @@
             </a>
         </div>
     </div>
+    <!-- Preload img, so no img lag -->
+    <script>
+        const img = new Image();
+        img.src = '/img/movie-background.jpg';
+
+        img.onload = function() {
+            document.body.style.backgroundImage = `url('${img.src}')`;
+            </script>
 </body>
 </html>
